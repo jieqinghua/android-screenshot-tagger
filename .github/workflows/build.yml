@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 需要完整历史和 tag，才能汇总上次发布以来的提交
 
       - uses: actions/setup-java@v4
         with:
@@ -40,10 +42,18 @@ jobs:
           name: ScreenshotTagger
           path: ScreenshotTagger.apk
 
+      # 发布说明：上一个 build-* 版本以来的提交标题，每条一行
+      - name: Release notes
+        run: |
+          prev=$(git describe --tags --abbrev=0 --match 'build-*' 2>/dev/null || true)
+          git log ${prev:+$prev..}HEAD --no-merges --pretty='- %s' > notes.md
+          cat notes.md
+
       # 每次编译发布一个 Release，手机可直接下载 APK，无需解压
       - uses: softprops/action-gh-release@v2
         with:
           tag_name: build-${{ github.run_number }}
           name: Build ${{ github.run_number }}
+          body_path: notes.md
           files: ScreenshotTagger.apk
           make_latest: true
