@@ -12,11 +12,12 @@ class ForegroundFilterTest {
         assertTrue(filter.ignore("com.android.systemui"))
         assertTrue(filter.ignore("com.miui.screenshot"))
         assertTrue(filter.ignore("com.sohu.inputmethod.sogou"))
-        assertTrue(filter.ignore("com.example.screenshottagger"))
     }
 
     @Test
     fun keepsNormalApps() {
+        // 本应用包名里也含 "screenshot"，但不能被过滤
+        assertFalse(filter.ignore("com.example.screenshottagger"))
         assertFalse(filter.ignore("com.tencent.mm"))
         assertFalse(filter.ignore("com.miui.home"))
     }
