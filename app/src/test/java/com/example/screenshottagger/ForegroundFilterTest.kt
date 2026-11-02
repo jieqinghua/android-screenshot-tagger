@@ -11,6 +11,8 @@ class ForegroundFilterTest {
     fun ignoresSystemWindows() {
         assertTrue(filter.ignore("com.android.systemui"))
         assertTrue(filter.ignore("com.miui.screenshot"))
+        assertTrue(filter.ignore("com.vivo.smartshot"))
+        assertTrue(filter.ignore("com.samsung.android.app.smartcapture"))
         assertTrue(filter.ignore("com.sohu.inputmethod.sogou"))
     }
 
