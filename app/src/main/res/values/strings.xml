@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">截图标记</string>
+    <string name="a11y_description">仅用于记录当前前台应用的包名，以便给系统截图文件名加上应用名。不读取任何屏幕内容。</string>
+
+    <string name="title_permissions">权限状态</string>
+    <string name="a11y_on">✅ 无障碍服务已开启</string>
+    <string name="a11y_off">❌ 无障碍服务未开启</string>
+    <string name="files_on">✅ 所有文件访问已授权</string>
+    <string name="files_off">❌ 所有文件访问未授权</string>
+    <string name="battery_on">✅ 已忽略电池优化</string>
+    <string name="battery_off">⚠️ 未忽略电池优化（国产 ROM 建议设置）</string>
+    <string name="action_open">去设置</string>
+    <string name="switch_enabled">自动给截图加应用名</string>
+    <string name="rom_hint">小米/华为/OPPO/vivo 等系统：请在系统设置中为本应用开启"自启动"，并把电池策略设为"无限制"，否则无障碍服务可能被后台清理。</string>
+    <string name="title_log">最近改名记录</string>
+    <string name="log_empty">暂无记录</string>
+</resources>
