@@ -75,7 +75,8 @@ class ScreenshotObserver(
         val finalName = renamer.rename(shot, newName)
         if (finalName != null) {
             markHandled(shot.id)
-            RenameLog.append(context, "${shot.displayName} → $finalName")
+            // 附上包名，遇到标错时便于定位是哪个窗口
+            RenameLog.append(context, "${shot.displayName} → $finalName ($pkg)")
             Log.i(TAG, "renamed ${shot.displayName} -> $finalName")
         } else if (attempt < MAX_RETRIES) {
             schedule(shot.id, attempt + 1)
