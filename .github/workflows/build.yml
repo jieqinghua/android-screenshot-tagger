@@ -25,9 +25,15 @@ jobs:
 
       - name: Unit tests + release APK
         run: gradle test assembleRelease
+        env:
+          RELEASE_KEYSTORE_B64: ${{ secrets.RELEASE_KEYSTORE_B64 }}
 
       - name: Rename APK
         run: cp app/build/outputs/apk/release/app-release.apk ScreenshotTagger.apk
+
+      # 打印签名证书指纹：每次构建都应相同，否则手机上无法覆盖安装
+      - name: Print signing certificate
+        run: $(ls -d $ANDROID_HOME/build-tools/* | tail -1)/apksigner verify --print-certs ScreenshotTagger.apk
 
       - uses: actions/upload-artifact@v4
         with:
