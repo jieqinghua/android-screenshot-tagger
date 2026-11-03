@@ -4,12 +4,13 @@ import android.content.Context
 
 object Prefs {
     private const val FILE = "settings"
-    private const val KEY_ENABLED = "enabled"
+    private const val KEY_ACTIVATED = "activated"
 
-    fun isEnabled(context: Context) =
-        context.getSharedPreferences(FILE, Context.MODE_PRIVATE).getBoolean(KEY_ENABLED, true)
+    /** 三项权限曾经全部开启过：之后再缺权限算“异常”，而不是“首次设置”。 */
+    fun wasActivated(context: Context) =
+        context.getSharedPreferences(FILE, Context.MODE_PRIVATE).getBoolean(KEY_ACTIVATED, false)
 
-    fun setEnabled(context: Context, enabled: Boolean) =
+    fun setActivated(context: Context) =
         context.getSharedPreferences(FILE, Context.MODE_PRIVATE).edit()
-            .putBoolean(KEY_ENABLED, enabled).apply()
+            .putBoolean(KEY_ACTIVATED, true).apply()
 }

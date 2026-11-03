@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 设计系统 PermissionRow：图标 + 权限名/用途 + “去设置”或对勾 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+    android:minHeight="68dp"
+    android:paddingVertical="10dp"
+    android:paddingStart="18dp"
+    android:paddingEnd="14dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        style="@style/RowIcon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/Text.RowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/sub"
+            style="@style/Text.RowSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/action"
+        style="@style/PillButton"
+        android:layout_marginStart="12dp" />
+
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/bg_check"
+        android:contentDescription="@string/permission_on"
+        android:scaleType="center"
+        android:src="@drawable/ic_check" />
+</LinearLayout>

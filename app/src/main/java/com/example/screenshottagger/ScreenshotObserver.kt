@@ -46,7 +46,6 @@ class ScreenshotObserver(
 
     // 运行在工作线程
     private fun process(rawId: Long, attempt: Int) {
-        if (!Prefs.isEnabled(context)) return
         // 通知里没带具体 id 时，退而查最近新增的一张
         val shot = (if (rawId > 0) renamer.query(rawId) else renamer.queryLatest())
         if (shot == null) {

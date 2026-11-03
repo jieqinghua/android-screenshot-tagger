@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">截图标记</string>
+    <string name="app_name">截图改名</string>
     <string name="a11y_description">仅用于记录当前前台应用的包名，以便给系统截图文件名加上应用名。不读取任何屏幕内容。</string>
 
-    <string name="title_permissions">权限状态</string>
-    <string name="a11y_on">✅ 无障碍服务已开启</string>
-    <string name="a11y_off">❌ 无障碍服务未开启</string>
-    <string name="files_on">✅ 所有文件访问已授权</string>
-    <string name="files_off">❌ 所有文件访问未授权</string>
-    <string name="battery_on">✅ 已忽略电池优化</string>
-    <string name="battery_off">⚠️ 未忽略电池优化（国产 ROM 建议设置）</string>
+    <string name="tagline">手机截图自动添加APP名称，整理更省心</string>
+    <string name="title_active">截图改名已启用</string>
+    <string name="sub_active">截图后约 2 秒自动加上 APP 名称</string>
+    <string name="title_inactive">请先设置权限</string>
+    <string name="sub_inactive">有权限被关闭，新截图暂时不会改名</string>
+
+    <string name="title_permissions">权限设置</string>
+    <string name="permissions_progress">%1$d / 3 已完成</string>
+    <string name="permissions_all_on">3 项已开启</string>
+    <string name="permissions_missing">%1$d 项未开启</string>
+    <string name="a11y_title">无障碍服务</string>
+    <string name="a11y_sub">识别截图时的前台 APP</string>
+    <string name="files_title">所有文件访问</string>
+    <string name="files_sub">给截图文件改名</string>
+    <string name="battery_title">忽略电池优化</string>
+    <string name="battery_sub">防止被系统后台清理</string>
+    <string name="permission_revoked">已被系统关闭</string>
+    <string name="permission_on">已开启</string>
     <string name="action_open">去设置</string>
-    <string name="switch_enabled">自动给截图加应用名</string>
-    <string name="rom_hint">小米/华为/OPPO/vivo 等系统：请在系统设置中为本应用开启"自启动"，并把电池策略设为"无限制"，否则无障碍服务可能被后台清理。</string>
+    <string name="expand">展开权限列表</string>
+    <string name="collapse">收起权限列表</string>
+
+    <string name="rom_hint">小米 / 华为 / OPPO / vivo 等系统：还需在系统设置中开启<b>“自启动”</b>，并把电池策略设为<b>“无限制”</b>。</string>
+    <string name="privacy">只记录前台 APP 名称，不读取任何屏幕内容，不上传数据</string>
+
     <string name="title_log">最近改名记录</string>
     <string name="log_empty">暂无记录</string>
+    <string name="log_empty_sub">截一张图试试，约 2 秒后会出现在这里</string>
+    <string name="time_yesterday">昨天 %1$s</string>
 </resources>

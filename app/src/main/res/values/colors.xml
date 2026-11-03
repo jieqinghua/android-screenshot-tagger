@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 与设计系统“截图改名”的 tokens 一一对应；深色值在 values-night/colors.xml。 -->
+<resources>
+    <color name="surface">#F1F1F4</color>
+    <color name="surface_raised">#FFFFFF</color>
+    <color name="ink">#1F1F24</color>
+    <color name="ink_muted">#6B6B75</color>
+    <color name="icon">#2B2B33</color>
+    <color name="line">#EFEFF3</color>
+    <color name="action">#1F1F24</color>
+    <color name="on_action">#FFFFFF</color>
+    <color name="success">#1E7D3A</color>
+    <color name="success_soft">#E3F5E9</color>
+    <color name="danger">#B42318</color>
+    <color name="marker_soft">#FDF1C4</color>
+    <color name="on_marker_soft">#5C4500</color>
+    <color name="shadow">#2614141E</color>
+</resources>

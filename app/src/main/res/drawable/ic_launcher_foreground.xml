@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 桌面图标前景：截图卡片 + 白描边名称标签。整体缩到 0.8，让卡片圆角落在自适应图标的可见区内。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54"
+        android:scaleX="0.8"
+        android:scaleY="0.8">
+        <path android:pathData="M22,20l1.8,4.3 4.3,1.8 -4.3,1.8 -1.8,4.3 -1.8,-4.3 -4.3,-1.8 4.3,-1.8z" android:fillColor="#FFFFFF" android:fillAlpha="0.9" />
+        <path android:pathData="M84,26a2,2 0,1 0,4,0a2,2 0,1 0,-4,0" android:fillColor="#FFFFFF" android:fillAlpha="0.6" />
+
+        <path android:pathData="M39,22h24a12,12 0,0 1,12,12v46a12,12 0,0 1,-12,12h-24a12,12 0,0 1,-12,-12v-46a12,12 0,0 1,12,-12z" android:fillColor="#0D2A66" android:fillAlpha="0.22" />
+        <path android:pathData="M37,17h24a12,12 0,0 1,12,12v46a12,12 0,0 1,-12,12h-24a12,12 0,0 1,-12,-12v-46a12,12 0,0 1,12,-12z">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="49" android:startY="17" android:endX="49" android:endY="87" android:startColor="#FFFFFF" android:endColor="#E6E9F1" />
+            </aapt:attr>
+        </path>
+        <path android:pathData="M37,24h24a6,6 0,0 1,6,6v13a6,6 0,0 1,-6,6h-24a6,6 0,0 1,-6,-6v-13a6,6 0,0 1,6,-6z" android:fillColor="#DBE7FF" />
+        <path android:pathData="M33,47l9,-10 6,6 5,-5 13,9z" android:fillColor="#9DC0FF" />
+        <path android:pathData="M56,30.5a3,3 0,1 0,6,0a3,3 0,1 0,-6,0" android:fillColor="#FFFFFF" />
+        <path android:pathData="M33.5,56h21a2.5,2.5 0,0 1,0,5h-21a2.5,2.5 0,0 1,0,-5z" android:fillColor="#D3D8E3" />
+        <path android:pathData="M33.5,65h12a2.5,2.5 0,0 1,0,5h-12a2.5,2.5 0,0 1,0,-5z" android:fillColor="#D3D8E3" />
+
+        <path android:pathData="M59,79l7,-9h19a5,5 0,0 1,5,5v8a5,5 0,0 1,-5,5h-19z" android:fillColor="#0D2A66" android:fillAlpha="0.22" />
+        <path
+            android:pathData="M58,76l7,-9h19a5,5 0,0 1,5,5v8a5,5 0,0 1,-5,5h-19z"
+            android:strokeColor="#FFFFFF"
+            android:strokeLineJoin="round"
+            android:strokeWidth="3">
+            <aapt:attr name="android:fillColor">
+                <gradient android:type="linear" android:startX="73" android:startY="67" android:endX="73" android:endY="85" android:startColor="#FFA184" android:endColor="#EF5F3C" />
+            </aapt:attr>
+        </path>
+        <path android:pathData="M70.1,70h12.8a1.1,1.1 0,0 1,0,2.2h-12.8a1.1,1.1 0,0 1,0,-2.2z" android:fillColor="#FFFFFF" android:fillAlpha="0.4" />
+        <path android:pathData="M64,76a2,2 0,1 0,4,0a2,2 0,1 0,-4,0" android:fillColor="#FFF4EF" />
+        <path android:pathData="M73,74h8a2,2 0,0 1,0,4h-8a2,2 0,0 1,0,-4z" android:fillColor="#FFFFFF" android:fillAlpha="0.9" />
+    </group>
+</vector>
